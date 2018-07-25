@@ -1,4 +1,5 @@
 import React from 'react';
+import configureStore from '../store/configureStore';
 
 const Search = () => (
 
@@ -8,5 +9,8 @@ const Search = () => (
             </form>
         </div>
 );
+
+const store = configureStore();
+console.log(store.getState());
 
 export default Search;
