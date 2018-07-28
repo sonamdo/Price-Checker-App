@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';//provides store to all components in our application
 import PriceCheckerApp from './components/PriceCheckerApp';
 import configureStore from './store/configureStore';
 import {setTextFilter} from './actions/filters';
+import { BrowserRouter } from 'react-router-dom';
+import AppRouter from './routers/AppRouter';
+import getVisibleProducts from './selectors/products';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
-import getVisibleProducts from './selectors/products'
 
 const store = configureStore();
 store.subscribe(() => {
@@ -15,10 +18,10 @@ store.subscribe(() => {
 })
 store.dispatch(setTextFilter('Domane'))
 
-// store.subscribe(() => {
-//   const state = store.getState();
-//   const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
-//   console.log(visibleExpenses);
-// });
+const jsx = (
+  <Provider store = {store}>//passes store down to main application
+    <AppRouter />// root component
+  </Provider>
+)
 
-ReactDOM.render(<PriceCheckerApp />, document.getElementById('app'));
+ReactDOM.render(jsx, document.getElementById('app'));
