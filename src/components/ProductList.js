@@ -12,7 +12,7 @@ const ProductList = (props) => (
   </div>
 )
 
-const ConnectedProductList = connect((state) => {
+const ConnectedProductList = connect((state) => {//connects component to store, uses function to determine what info it needs to access
   console.log(state)
   return {
     products : getVisibleProducts(state.data, state.filters)

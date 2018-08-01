@@ -1,12 +1,27 @@
 import React from 'react';
-import configureStore from '../store/configureStore';
+import { connect } from 'react-redux';
+import { setTextFilter } from '../actions/filters';
 
-const Search = () => (
+const Search = (props) => (
         <div>
             <form className ="search">
-              <input type = "text" placeholder = "Search by product name"/>
+              <input
+                type = "text"
+                placeholder = "Search by product name"
+                value = {props.filters.text}
+                onChange = {(e) => {//e is input text value
+                  props.dispatch(setTextFilter(e.target.value));
+                  console.log(e.target.value)
+                }}
+              />
             </form>
         </div>
 );
 
-export default Search;
+const mapStateToProps = (state) => {
+  return {
+    filters : state.filters
+  }
+}
+
+export default connect(mapStateToProps)(Search);//connecting component to store via connect() function
