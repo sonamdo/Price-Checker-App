@@ -4,8 +4,10 @@ import { BrowserRouter, Route } from 'react-router-dom';
 
 const AppRouter = () => (
   <BrowserRouter>
-    <Route path = "/" component = {PriceCheckerApp}/>
-  </ BrowserRouter>
+    <div>
+      <Route path = "/" component = {PriceCheckerApp} />
+    </div>
+  </BrowserRouter>
 )
 
 export default AppRouter;

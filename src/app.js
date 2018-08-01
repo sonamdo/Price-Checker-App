@@ -19,8 +19,8 @@ store.subscribe(() => {
 store.dispatch(setTextFilter('Domane'))
 
 const jsx = (
-  <Provider store = {store}>//passes store down to main application
-    <AppRouter />// root component
+  <Provider store = {store}>
+    <AppRouter />
   </Provider>
 )
 
