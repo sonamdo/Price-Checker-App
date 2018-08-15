@@ -5,6 +5,6 @@ const publicPath = path.join(__dirname, '..', 'public');
 
 app.use(express.static(publicPath));
 
-app.listen(80, () => {
-  console.log('Server is up on port 80')
+app.listen(3000, () => {
+  console.log('Server is up on port 3000')
 });
