@@ -7,7 +7,7 @@ const Search = (props) => (
             <form className ="search">
               <input
                 type = "text"
-                placeholder = "Search by product name"
+                placeholder = "Type product name"
                 value = {props.filters.text}
                 onChange = {(e) => {//e is input text value
                   props.dispatch(setTextFilter(e.target.value));

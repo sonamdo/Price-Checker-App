@@ -5,9 +5,11 @@ import ConnectedProductList from './ProductList';
 
 const PriceCheckerApp = () => (
       <div>
-        <Header title = "Price Checker"/>
-        <Search />
-        <ConnectedProductList />
+        <Header title = "Price Checker" subtitle = "Search for bikes and prices"/>
+        <div className = "container">
+          <Search />
+          <ConnectedProductList />
+        </div>
       </div>
 )
 

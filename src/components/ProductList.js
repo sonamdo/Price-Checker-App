@@ -4,7 +4,7 @@ import ProductListItem from './ProductListItem';
 import getVisibleProducts from '../selectors/products';
 
 const ProductList = (props) => (
-  <div>
+  <div className = "productList">
     <h2>Products</h2>
     {props.products.map((product) => {
       return <ProductListItem key = {product.model} {...product} />

@@ -16,7 +16,7 @@ store.subscribe(() => {
   const visibleProducts = getVisibleProducts(state.data, state.filters)
   console.log(visibleProducts)
 })
-store.dispatch(setTextFilter('Domane'))
+store.dispatch(setTextFilter(''))
 
 const jsx = (
   <Provider store = {store}>

@@ -17,6 +17,46 @@ const dataReducerDefaultState = [
     model : 'Domane Gioni',
     brand : 'Trek',
     price : 15000
+  },
+  {
+    website: "Bikezone",
+    model: "2018 Bombtrack Beyond+ 2",
+    brand: "",
+    price: 3249.99
+  },
+  {
+    website:"Bikezone",
+    model:"2018 Bombtrack Hook 2",
+    brand:"",
+    price:2549.99
+  },
+  {
+    website:"Corbbets",
+    model:"2019 Armada ARV 96 Skis",
+    brand:"ARMADA",
+    price:579.99},
+  {
+    website:"Corbbets",
+    model:"2019 Atomic Vantage 90 CTi Skis",
+    brand:"ATOMIC","price":699.99
+  },
+  {
+    website:"Corbbets",
+    model:"2019 Armada ARW 84 Womens Skis",
+    brand:"ARMADA",
+    price:349.99
+  },
+  {
+    website:"Corbbets",
+    model:"2019 Atomic Vantage X 80 CTI Womens Skis w/ FT 11 GW Bindings",
+    brand:"ATOMIC",
+    price:799.99
+  },
+  {
+    website:"Corbbets",
+    model:"2019 Atomic Redster G9 Skis w/ X 14 TL RS Bindings",
+    brand:"ATOMIC",
+    price:1099
   }
 ]
 
