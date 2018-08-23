@@ -5,7 +5,7 @@ import ConnectedProductList from './ProductList';
 
 const PriceCheckerApp = () => (
       <div>
-        <Header title = "Price Checker" subtitle = "Search for bikes and prices"/>
+        <Header title = "Bike Price Checker" subtitle = "Check stores in the GTA for Bike Prices"/>
         <div className = "container">
           <Search />
           <ConnectedProductList />
