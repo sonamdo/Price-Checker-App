@@ -1,5 +1,6 @@
 import {createStore, combineReducers} from 'redux';
 import dataReducer from '../reducers/data';
+import skiReducer from '../reducers/skis'
 import filtersReducer from '../reducers/filters';
 
 //Store creation
@@ -8,6 +9,7 @@ export default() => {
   const store = createStore(
     combineReducers({
       data : dataReducer,
+      skis : skiReducer,
       filters : filtersReducer
     })
   )

@@ -23,5 +23,5 @@ const jsx = (
     <AppRouter />
   </Provider>
 )
-
+console.log(store)
 ReactDOM.render(jsx, document.getElementById('app'));
