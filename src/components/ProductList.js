@@ -5,7 +5,7 @@ import getVisibleProducts from '../selectors/products';
 
 const ProductList = (props) => (
   <div className = "productList">
-    <h2>Products</h2>
+    <h2>Bikes</h2>
     <table>
       <tr>
         <th>Model</th>

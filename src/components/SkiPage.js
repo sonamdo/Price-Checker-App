@@ -6,7 +6,6 @@ import ConnectedSkiList from './SkiList';
 const SkiPage = () => (
       <div>
         <div className = "container">
-          <h1>Testing Router</h1>
           <Search />
           <ConnectedSkiList />
         </div>

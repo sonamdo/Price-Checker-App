@@ -9,7 +9,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 const AppRouter = () => (
   <BrowserRouter>
     <div>
-    <Header title = "Bike Price Checker" subtitle = "Check stores in the GTA for Bike Prices"/>
+    <Header title = "Bike Price Checker" subtitle = "Check stores in the GTA for Bike and Ski Prices"/>
       <Switch>
         <Route path = "/" component = {PriceCheckerApp} exact = {true}/>
         <Route path = "/about" component = {AboutPage} exact = {true}/>
